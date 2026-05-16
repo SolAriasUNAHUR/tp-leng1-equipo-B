@@ -22,11 +22,19 @@ body {
 }
 
 header{
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-diferencial);
     padding: 20px;
     margin-bottom: 20px;
-
 }
+
+.top-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 
 nav ul {
     display: flex;
@@ -70,7 +78,7 @@ footer{
     margin-top: 20px;
 }
 
-a :hover {
+a img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
