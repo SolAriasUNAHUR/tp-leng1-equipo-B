@@ -1,42 +1,71 @@
 :root{
-    --color-principal: #867E32;
-    --color-fondo: #D2EAF1;
-    --color-acento: #FDD365;
-    --color-texto: #3b3b3b;
+    --color-diferencial: #E67E22; 
+    --color-fondo: #FDE68A;
+    --color-acento: #1E293B;
+    --color-texto:  #2D3748;
+    --fuente: "Barlow", sans-serif;
 }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: var(--color-fondo) ;
-    .barlow-regular {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
+    background-color: var(--color-fondo); 
+    color: var(--color-texto);
+    font-family: var(--fuente);
     font-style: normal;
     font-size: 1rem;
     line-height: 1.6;
 }
+
+header{
+    background-color: var(--color-diferencial);
+    padding: 20px;
+    margin-bottom: 20px;
+
 }
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 0.rem;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main{
+    padding: 20px;
+}
+p{
+    margin-bottom: 10px;
+}
+
 h1{
     font-size: 40px;
-    color: var(--color-principal);
+    color: var(--color-acento);
 }
 
 h2{
     font-size: 30px;
-    color: #867E32; 
+    color: var(--color-diferencial); 
 }
-<!--cambiar color!! -->
+
 
 h3{
     font-size: 22px;
-    color: #867E32;
+    color: var(--color-texto);
 }
 
-header{
-    background-color: var(--color-acento);
-    color: white;
-    padding: 20px;
-}
 
 footer{
-    background-color: var(--color-acento);
+    background-color: var(--color-diferencial);
     color: white;
     padding: 20px;
+    margin-top: 20px;
+}
