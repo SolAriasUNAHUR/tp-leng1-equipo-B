@@ -39,6 +39,10 @@ header{
     gap: 20px;
 }
 
+a img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 
 nav ul {
     display: flex;
@@ -83,7 +87,17 @@ footer{
     margin-top: 20px;
 }
 
-a img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+.galeria-3 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria-3 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
