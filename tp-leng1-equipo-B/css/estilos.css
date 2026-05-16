@@ -69,3 +69,17 @@ footer{
     padding: 20px;
     margin-top: 20px;
 }
+
+.tarjeta-seccion {
+    background-color: #ffffff; 
+    padding: 2.5rem;
+    margin-bottom: 2.0rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--color-acento);
+}
+
+.tarjeta-seccion h2 {
+    color: var(--color-acento); 
+    border-bottom: 0.2rem solid var(--color-fondo);
+    padding-bottom: 0.5rem;
+}
