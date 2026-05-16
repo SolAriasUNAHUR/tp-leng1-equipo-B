@@ -6,6 +6,10 @@
     --fuente: "Barlow", sans-serif;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +21,7 @@ body {
     color: var(--color-texto);
     font-family: var(--fuente);
     font-style: normal;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.6;
 }
 
@@ -40,7 +44,7 @@ nav ul {
     display: flex;
     gap: 1.5rem;
     list-style: none;
-    margin-top: 0.rem;
+    margin-top: 0rem;
 }
 
 nav a:hover {
@@ -51,22 +55,23 @@ main{
     padding: 20px;
 }
 p{
+    font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 4rem;
     color: var(--color-acento);
 }
 
 h2{
-    font-size: 30px;
+    font-size: 3rem;
     color: var(--color-diferencial); 
 }
 
 
 h3{
-    font-size: 22px;
+    font-size: 2.5rem;
     color: var(--color-texto);
 }
 
