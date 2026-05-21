@@ -83,3 +83,18 @@ footer{
     border-bottom: 0.2rem solid var(--color-fondo);
     padding-bottom: 0.5rem;
 }
+
+.galeria-3 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria-3 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
