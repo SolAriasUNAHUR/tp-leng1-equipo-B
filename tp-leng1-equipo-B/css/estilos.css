@@ -6,10 +6,6 @@
     --fuente: "Barlow", sans-serif;
 }
 
-html{
-    font-size: 62.5%;
-}
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,34 +17,22 @@ body {
     color: var(--color-texto);
     font-family: var(--fuente);
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
 header{
-    display: flex;
-    flex-direction: column;
     background-color: var(--color-diferencial);
     padding: 20px;
     margin-bottom: 20px;
-}
 
-.top-header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-a img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
 }
 
 nav ul {
     display: flex;
     gap: 1.5rem;
     list-style: none;
-    margin-top: 0rem;
+    margin-top: 0.rem;
 }
 
 nav a:hover {
@@ -59,23 +43,22 @@ main{
     padding: 20px;
 }
 p{
-    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 40px;
     color: var(--color-acento);
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 30px;
     color: var(--color-diferencial); 
 }
 
 
 h3{
-    font-size: 2.5rem;
+    font-size: 22px;
     color: var(--color-texto);
 }
 
@@ -87,17 +70,16 @@ footer{
     margin-top: 20px;
 }
 
-.galeria-3 {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+.tarjeta-seccion {
+    background-color: #ffffff; 
+    padding: 2.5rem;
+    margin-bottom: 2.0rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--color-acento);
 }
 
-.galeria-3 img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.tarjeta-seccion h2 {
+    color: var(--color-acento); 
+    border-bottom: 0.2rem solid var(--color-fondo);
+    padding-bottom: 0.5rem;
 }
