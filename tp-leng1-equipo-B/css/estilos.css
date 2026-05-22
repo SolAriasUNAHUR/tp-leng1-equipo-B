@@ -1,7 +1,7 @@
 :root{
     --color-diferencial: #E67E22; 
-    --color-fondo: #FDE68A;
-    --color-acento: #1E293B;
+    --color-fondo: #FFECA3;
+    --color-acento: #B470BA;
     --color-texto:  #2D3748;
     --fuente: "Barlow", sans-serif;
 }
@@ -22,10 +22,42 @@ body {
 }
 
 header{
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-diferencial);
     padding: 20px;
     margin-bottom: 20px;
 
+    background-image: 
+    /* linear-gradient(var(--color-diferencial),var(--color-diferencial)),*/
+        url('../images/perro1.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+header h1{
+    color: white;
+    font-size: 40px;
+}
+
+header p{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul {
@@ -35,21 +67,26 @@ nav ul {
     margin-top: 0.rem;
 }
 
+nav a,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 nav a:hover {
-    color: #ffffff;
+    color: var(--color-acento);
 }
 
 main{
     padding: 20px;
 }
+
 p{
     margin-bottom: 10px;
 }
 
-h1{
-    font-size: 40px;
-    color: var(--color-acento);
-}
+
 
 h2{
     font-size: 30px;
@@ -62,13 +99,13 @@ h3{
     color: var(--color-texto);
 }
 
-
 footer{
     background-color: var(--color-diferencial);
     color: white;
     padding: 20px;
     margin-top: 20px;
 }
+
 
 .tarjeta-seccion {
     background-color: #ffffff; 
