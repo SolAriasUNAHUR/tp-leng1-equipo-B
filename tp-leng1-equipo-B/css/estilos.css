@@ -134,12 +134,21 @@ footer{
 }
 
 .vertical {
-    width: 30%;
-    min-width: 500px;
+    width: 100%;
     margin-bottom: 1.5rem;
-    color: var(--color-texto);
+    background-color: var(--color-acento);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
 }
 
+.vertical:hover {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: var(--color-texto);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    
+}
 .tarjeta-seccion h2 {
     color: var(--color-acento); 
     border-bottom: 0.2rem solid var(--color-fondo);
@@ -162,10 +171,17 @@ footer{
 }
 
 .contenedor-tarjetas-verticales {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+}
+
+/*Media Queries para Responsividad en pantallas angostas*/
+
+@media (max-width: 768px) { 
+    .contenedor-tarjetas-verticales {
+        grid-template-columns: 1fr;
+    }
 }
 
