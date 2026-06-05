@@ -192,12 +192,12 @@ footer{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .galeria-3 img {
-    width: 100%;
-    max-width: 300px;
+    width: 47%;
+    min-width: 200px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
