@@ -166,6 +166,7 @@ footer{
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease-in-out;
+    border: 0.1rem solid var(--color-acento);
 }
 
 .tarjeta-proyecto:hover {
@@ -176,13 +177,16 @@ footer{
     
 }
 
+.tarjeta-2{
+    max-width: 45%;
+}
+
 .contenedor-tarjetas-verticales {
     margin-top: 2rem;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
 }
 
 /* --------------------------- */
@@ -225,6 +229,7 @@ footer{
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 2rem;
+    border: 0.2rem solid var(--color-acento);
 }
 
 .galeria-3 {
@@ -245,7 +250,7 @@ footer{
 /*Media Queries para Responsividad en pantallas angostas*/
 
 @media (max-width: 768px) { 
-    .tarjeta-proyecto {
+    .tarjeta{
         max-width: 100%;
     }
 
