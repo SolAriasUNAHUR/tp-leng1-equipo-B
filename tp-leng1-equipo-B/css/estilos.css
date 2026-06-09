@@ -9,15 +9,17 @@
     --fuente: "Barlow", sans-serif;
 }
 
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 html{
     font-size: 62.5%;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 a{
     color: inherit;
@@ -25,6 +27,9 @@ a{
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-fondo); 
     color: var(--color-texto);
     font-family: var(--fuente);
@@ -102,6 +107,7 @@ nav a:hover {
 }
 
 main{
+    flex: 1; /*hace crecer el main para ocupar el espacio disponible entre header y footer  */
     padding: 2rem;
 }
 
@@ -123,6 +129,7 @@ h3{
 }
 
 footer{
+    margin-top: auto;
     background-color: var(--color-diferencial);
     color: white;
     padding: 2rem;
@@ -165,7 +172,8 @@ footer{
 }
 
 .tarjeta-proyecto {
-    width: 100%;
+    min-width: 300px;
+    max-width: 27%;
     margin-bottom: 1.5rem;
     background-color: var(--color-acento);
     color: white;
@@ -174,7 +182,7 @@ footer{
 }
 
 .tarjeta-proyecto:hover {
-    background-color: hsla(0, 0%, 100%, 1);
+    background-color: white;
     color: var(--color-texto);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
     transform: scale(1.01);
@@ -203,16 +211,18 @@ footer{
 
 .contenedor-tarjetas-verticales {
     margin-top: 2rem;
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 2rem;
 }
 
 /*Media Queries para Responsividad en pantallas angostas*/
 
 @media (max-width: 768px) { 
-    .contenedor-tarjetas-verticales {
-        grid-template-columns: 1fr;
+    .tarjeta-proyecto {
+        max-width: 100%;
     }
 
     #tabla-contacto {
