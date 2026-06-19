@@ -169,11 +169,8 @@ footer{
 }
 
 .tarjeta-proyecto:hover {
-    background-color: white;
-    color: var(--color-texto);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
     transform: scale(1.01);
-    
 }
 
 
@@ -251,6 +248,21 @@ footer{
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Fix para botones de acordion de bootstrapp*/
+
+.accordion-button{
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: none;
+}
+.accordion-button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.accordion-button:focus-visible{
+    outline: 2px solid blue;
 }
 
 /*Media Queries para Responsividad en pantallas angostas*/
