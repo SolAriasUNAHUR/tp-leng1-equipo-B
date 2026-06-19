@@ -35,7 +35,7 @@ body {
     font-family: var(--fuente);
     font-style: normal;
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 header{
@@ -159,8 +159,7 @@ footer{
 }
 
 .tarjeta-proyecto {
-    min-width: 300px;
-    max-width: 27%;
+    flex: 1 1 300px;
     margin-bottom: 1.5rem;
     background-color: var(--color-acento);
     color: white;
@@ -187,6 +186,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 /* --------------------------- */
