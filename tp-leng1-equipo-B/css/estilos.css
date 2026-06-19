@@ -176,9 +176,6 @@ footer{
     
 }
 
-.tarjeta-2{
-    max-width: 45%;
-}
 
 .contenedor-tarjetas-verticales {
     margin-top: 2rem;
@@ -188,6 +185,14 @@ footer{
     justify-content: space-between;
     gap: 2rem;
 }
+
+#Finanzas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+
+
 
 /* --------------------------- */
 
@@ -251,9 +256,7 @@ footer{
 /*Media Queries para Responsividad en pantallas angostas*/
 
 @media (max-width: 768px) { 
-    .tarjeta{
-        max-width: 100%;
-    }
+    
 
     #tabla-contacto,
     #tabla-organizacion{
