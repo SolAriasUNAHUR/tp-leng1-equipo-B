@@ -91,10 +91,11 @@ header p{
 }
 
 nav{
-    align-self: end;
+    align-self:end;
+
     
 }
-
+/* 
 nav ul {
     display: flex;
     gap: 5rem;
@@ -106,7 +107,7 @@ nav a {
     display: inline-block;
     font-weight: bold;
     transition: transform 0.2s ease;
-}
+} MODIFICO LOS SELECTORES POR NO SER COMPATIBLES CON BOOSTRAP*/
 
 nav a:hover {
     color: var(--color-acento);
