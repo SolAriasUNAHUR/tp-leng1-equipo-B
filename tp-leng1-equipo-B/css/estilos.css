@@ -38,16 +38,14 @@ a{
 
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     padding: 2rem;
     margin-bottom: 2rem;
-    position: sticky;
     top: 0;
-    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
     background-color: var(--color-diferencial);
     color: white;
-    z-index: 999;
+    z-index: 1;
 
 
     background-image: url('../images/perro1.jpg');
@@ -66,8 +64,10 @@ header p{
     margin-top: 1rem;
 }
 
-.top-header{
+.top-header a{
+    
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 12px;
     margin-bottom: 1rem;
@@ -91,9 +91,14 @@ header p{
     flex-direction: column;
 }
 
-nav{
-    align-self:end;
+/*no tiene efecto*/
+.contenedor-nav{
+    position: sticky;
+    top:0px;
+    z-index: 4;
 }
+
+
 
 
 /* 
@@ -135,7 +140,7 @@ header.compacto .titulos p{
 }
 
 main{
-    flex: 1; /*hace crecer el main para ocupar el espacio disponible entre header y footer  */
+    flex: 1; /*hace crecer el main para ocupar el espacio disponible entre y footer  */
     padding: 2rem;
 }
 
@@ -431,12 +436,12 @@ footer{
     .card-peq{
         min-width: 100%;
     }
-
+/*
     #tabla-contacto,
     #tabla-organizacion{
         display: block;
         overflow-x: auto;
         white-space: nowrap;
-    }
+    }*/
 }
 
