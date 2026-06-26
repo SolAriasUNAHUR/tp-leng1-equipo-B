@@ -90,7 +90,14 @@ header p{
     flex-direction: column;
 }
 
-/*no tiene efecto*/
+.nav-brand{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
 .contenedor-nav{
     display: flex;
     justify-content: space-between;
@@ -106,6 +113,12 @@ header p{
     color: white
 }
 
+.contenedor-navbar{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: start;
+}
 
 /* 
 nav ul {
@@ -244,7 +257,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    scroll-margin-top: 8rem;
     
     border-radius: 20px;
     overflow: hidden;
@@ -257,7 +270,7 @@ footer{
     height: 20rem;
     width: 100%;
     position: relative;
-    /* border: solid 3px blue; */
+    border: solid 3px blue; 
     margin-bottom: 2rem;
     overflow: hidden;
 }
@@ -446,5 +459,10 @@ footer{
     #tabla-organizacion{
         font-size: 1.1rem;
     }
+
+    .t-img{
+        display: none;
+    }
+
 }
 
