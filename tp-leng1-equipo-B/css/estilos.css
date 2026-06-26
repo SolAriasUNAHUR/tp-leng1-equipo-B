@@ -45,7 +45,6 @@ header{
     top: 0;
     background-color: var(--color-diferencial);
     color: white;
-    z-index: 1;
 
 
     background-image: url('../images/perro1.jpg');
@@ -93,12 +92,18 @@ header p{
 
 /*no tiene efecto*/
 .contenedor-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--color-diferencial);
     position: sticky;
     top:0px;
-    z-index: 4;
+    z-index: 99;
 }
 
-
+.navbar{
+}
 
 
 /* 
