@@ -22,7 +22,7 @@ html{
 body {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr auto ;
+    grid-template-rows: auto auto 1fr auto ;
     background-color: var(--color-fondo); 
     color: var(--color-texto);
     font-family: var(--fuente);
@@ -102,7 +102,8 @@ header p{
     z-index: 99;
 }
 
-.navbar{
+.contenedor-nav a{
+    color: white
 }
 
 
@@ -244,8 +245,7 @@ footer{
     flex-direction: column;
     align-items: center;
     
-    margin-left: 50px;
-    margin-right: 50px;
+    
     border-radius: 20px;
     overflow: hidden;
    /* border: solid 3px green; */
@@ -441,12 +441,10 @@ footer{
     .card-peq{
         min-width: 100%;
     }
-/*
+
     #tabla-contacto,
     #tabla-organizacion{
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }*/
+        font-size: 1.1rem;
+    }
 }
 
