@@ -38,6 +38,7 @@ a{
 
 header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -92,9 +93,9 @@ header p{
 
 nav{
     align-self:end;
-
-    
 }
+
+
 /* 
 nav ul {
     display: flex;
@@ -254,7 +255,7 @@ footer{
 .contenedor-titulo img{
     position: absolute;
     width:50%;
-    top:-150px;
+    top:00px;
     left: 50%;
     z-index: -1;
 }
