@@ -1,6 +1,11 @@
 /* PARA FONT-SIZE Y LINE-HEIGHT SE UTILIZA REM PARA QUE SEA RELATIVO AL TAMAÑO DE LA RAÍZ (HTML) Y ASÍ PERMITIR UNA MEJOR ESCALABILIDAD Y ACCESIBILIDAD EN DIFERENTES DISPOSITIVOS. */
 /* 1rem = 10px */
 
+
+/* 
+   ---- VARIABLES----
+*/
+
 :root{
     --color-diferencial: #E67E22; 
     --color-fondo: #FFECA3;
@@ -9,8 +14,13 @@
     --fuente: "Barlow", sans-serif;
 }
 
-html,
-body{
+/* 
+   ----RESET--------
+*/
+
+
+html body{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -36,10 +46,12 @@ a{
     text-decoration: none;
 }
 
+/* ---------HEADER-------*/
+
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* Separa el logo de los enlaces */
     padding: 2rem;
     margin-bottom: 2rem;
     top: 0;
@@ -132,7 +144,8 @@ nav a {
 nav a:hover {
     color: var(--color-acento);
     transform: translateY(3px);
-}
+} /*cambio de color o efecto visual al
+pasar el mouse + Es la función que mueve el elemento en el eje Y*/
 
 
 main{
