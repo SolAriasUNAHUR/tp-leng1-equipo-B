@@ -18,6 +18,9 @@
    ----RESET--------
 */
 
+.hidden{
+    display: none !important;
+}
 
 html body{
     box-sizing: border-box;
@@ -238,11 +241,11 @@ footer{
 
 /* --------------------------- */
 /* Proyectos */
-
+/*
 .display-proyectos{
-    /* border: solid 3px red; */
+     border: solid 3px red;
 }
-
+*/
 .proyecto{
     display: flex;
     flex-direction: column;
@@ -280,6 +283,10 @@ footer{
     -webkit-mask-image: linear-gradient(to left, black 50%, transparent 100%);
 }
 
+.proyecto-titulo{
+    max-width: 60%;
+}
+
 .inf-gral{
     display:flex;
     flex-direction: row;
@@ -302,6 +309,24 @@ footer{
     align-items: center;
 }
 
+.btn-implementacion{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 100vw;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #2D3748;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.contenedor-implementacion{
+    margin-top: 4rem ;
+    padding-bottom: 2rem ;
+}
+
 .implementacion{
     display: flex;
     flex-direction: row;
@@ -311,10 +336,18 @@ footer{
 }
 
 .card-peq{
+    width: 30rem;
     padding: 2rem;
-    max-width: 30rem;
     border-radius: 20px;
+    color: var(--color-texto);
+    background-color: beige;
     box-shadow: 0 2px 11px 0px #0000003a;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.card-peq h5{
+    font-size: 2rem;
 }
 
 .item-icon{
