@@ -205,16 +205,6 @@ footer{
     transform: scale(1.01);
 }
 
-.tarjeta-seccion{
-    transition: transform .3s ease, 
-    box-shadow .3s ease;
-}
-
-.tarjeta-seccion:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0,0,0,.12);
-}
-
 .contenedor-tarjetas-verticales {
     margin-top: 2rem;
     display:flex;
