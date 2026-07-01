@@ -18,3 +18,4 @@ let educacion = document.getElementById("imp-educacion");
 btneducacion.addEventListener("click", () =>{
     educacion.classList.toggle("hidden")
 })
+

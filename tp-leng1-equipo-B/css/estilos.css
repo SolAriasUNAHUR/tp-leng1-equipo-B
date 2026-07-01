@@ -427,7 +427,21 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#register-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f4f4f4;
+ }
 
+ #register-form button {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    margin-top: 15px;
+}
 
 /*Fix para botones de acordion de bootstrapp*/
 
