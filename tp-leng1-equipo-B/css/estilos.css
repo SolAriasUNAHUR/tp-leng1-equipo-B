@@ -18,6 +18,12 @@
    ----RESET--------
 */
 
+input, textarea, select, button{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
 .hidden{
     display: none !important;
 }
@@ -429,15 +435,18 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 #register-form {
-    max-width: 400px;
+    width: 70%;
     margin: 20px auto;
     padding: 20px;
     background: #f4f4f4;
  }
 
  #register-form button {
-    width: 100%;
+    border-radius: 5px;
+    width: 15rem;
     padding: 10px;
     background: green;
     color: white;
@@ -481,6 +490,10 @@ footer{
     .contenedor-titulo img{
         top:0;
     }
+
+    #register-form {
+    width: 100%;
+ }
 
 }
 

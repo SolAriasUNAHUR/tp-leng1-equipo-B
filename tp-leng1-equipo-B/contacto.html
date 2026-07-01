@@ -55,7 +55,8 @@
         </header>
         <main>
             <div id="tabla-contacto" class="tarjeta tarjeta-seccion">
-                <table id="tabla-contacto">
+                <h2>Contactanos</h2>
+                <table id="tabla-organizacion">
                     <thead>
                         <tr>
                             <th>Medio</th>
@@ -83,41 +84,35 @@
                 </table>
             </div>
             <section>
-                <div class="container-ser-parte">
+                <div class="container-ser-parte tarjeta tarjeta-seccion">
                     <h2>¡Sumate a Patas sin Fronteras!</h2>
                     <p>Dejanos tus datos para ser parte</p>
                     
-                    <form id="register-form">
+                    <form id="register-form" novalidate>
                         
-                            <div class="form-field">
-                                <label for="name">Nombre Completo</label><br>
-                                <input type="text" id="name" placeholder="Ingrese nombre completo">
-                                <small></small>
+                        <div class="form-field">
+                            <label for="nombre">Nombre Completo</label><br>
+                            <input id="nombre" class="form-control form-control-lg" type="text" placeholder="Ingrese nombre completo" required>
+                            <span class="mensage-error"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="correo">Email</label><br>
+                            <input id="correo" class="form-control form-control-lg" type="email" placeholder="Ingrese correo electrónico" required>
+                            <span class="mensage-error"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="telefono">Teléfono</label><br>
+                            <input id="telefono" class="form-control form-control-lg" placeholder="1122223333" required></input> <!--required identifica si el input esta vacío o no-->
+                            <span class="mensage-error"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="mensaje">Mensaje</label><br>
+                            <textarea id="mensaje" class="form-control form-control-lg" name="user_message" placeholder="Ingrese su mensaje" rows="10" required></textarea> <!--required identifica si el input esta vacío o no-->
+                            <span class="mensage-error"></span>
+                        </div>
 
-                            </div>
-                            <div class="form-field">
-
-                                <label for="correo">Email</label><br>
-                                <input 
-                                    type="text" 
-                                    id="correo" 
-                                    placeholder="Ingrese correo electrónico"
-                                    
-                                    
-                                >
-                                <small></small>
-
-                            </div>
-                            <div class="form-field">
-
-                                <label for="mensaje">Mensaje</label><br>
-                                <textarea id="mensaje" name="user_message" placeholder="Ingrese su mensaje"></textarea><br> <!--required identifica si el input esta vacío o no-->
-                                <small></small>
-
-                            </div>
-                                
-                            <button type="submit">Enviar</button>
-                            <p id="resultado"></p>
+                        <button type="submit">Enviar</button>
+                        <p id="resultado"></p>
                        
                     </form>
 
