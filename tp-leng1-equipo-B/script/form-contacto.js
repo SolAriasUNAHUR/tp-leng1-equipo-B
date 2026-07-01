@@ -57,7 +57,7 @@ form.addEventListener('submit', (e) => {
                 mensajeError.style.color = "red";
             }
         }
-        
+
         return; // No envia el formulario si hay error//
     }
 
@@ -65,6 +65,8 @@ form.addEventListener('submit', (e) => {
     cartel.style.color = "green";
     
     form.reset(); // Limpia los campos// 
+
+    /*Enviar Formulario*/ 
 
     
 });
