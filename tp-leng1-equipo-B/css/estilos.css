@@ -395,6 +395,14 @@ footer{
     justify-content: center;
 }
 
+#tabla-organizacion img{
+    transition: all .3s ease;
+    border-radius: 8px;
+}
+
+#tabla-organizacion img:hover{
+    transform: scale(1.1);
+}
 
 #Transparencia ul{
     text-decoration: underline;
