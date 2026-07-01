@@ -130,19 +130,6 @@ header p{
     justify-content: start;
 }
 
-/* 
-nav ul {
-    display: flex;
-    gap: 5rem;
-    list-style: none;
-    margin-top: 0.rem;
-}
-
-nav a {
-    display: inline-block;
-    font-weight: bold;
-    transition: transform 0.2s ease;
-} MODIFICO LOS SELECTORES POR NO SER COMPATIBLES CON BOOSTRAP*/
 
 nav a:hover {
     color: var(--color-acento);
